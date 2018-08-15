@@ -2,10 +2,10 @@
 
 import os
 import requests
+import sys
 from bottle import route, run, static_file, get, post, request, template
 from dotenv import load_dotenv
 import speech_recognition as sr
-import sys
 
 reload(sys)
 sys.setdefaultencoding('utf8')
@@ -31,7 +31,7 @@ def styleReq(file):
 @post('/call')
 def callReq():
   return {
-    'play': os.getenv('PUBLIC_URL') + '/media/' + os.getenv('AUDIO_FILE'),
+    'play': os.getenv('PUBLIC_URL') + '/media/audio.mp3',
     'skippable': False,
     'next': {
       'play': 'sound/beep',
