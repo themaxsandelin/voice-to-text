@@ -1,0 +1,92 @@
+
+/* GitHub link styles */
+
+a.github {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  margin-left: -20px;
+}
+
+a.github svg {
+  width: 40px;
+  height: 40px;
+}
+
+a.github svg .fill {
+  fill: rgba(0, 0, 0, 0.5);
+}
+
+
+/* Main content styles (centered content) */
+
+body {
+  background: #FAFBFF;
+  font-family: 'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  line-height: 26px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #1A1E5C;
+  font-size: 38px;
+  line-height: 46px;
+  font-weight: 700;
+}
+
+p:not(.meta) {
+  width: 100%;
+  max-width: 606px;
+  margin: 10px 0 40px;
+}
+
+a.phone {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1A1E5C;
+  line-height: 30px;
+  padding: 17px 30px;
+  background: #fff;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.06);
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+a.phone:hover {
+  color: #4C54DF;
+}
+
+
+/* Footer (meta) styles */
+
+p.meta {
+  position: absolute;
+  bottom: 20px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+p.meta a {
+  color: #4C54DF;
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+p.meta a:hover {
+  color: #1A1E5C;
+}
