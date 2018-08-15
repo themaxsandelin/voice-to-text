@@ -1,3 +1,4 @@
 .env
 /recordings
 /media
+.DS_Store
